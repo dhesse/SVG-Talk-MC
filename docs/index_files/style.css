@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 4vh;
+    line-height: 1.5;
+}
+h1 { font-size: 8vh;
+     font-weight: 300;
+     margin: 0;
+     padding-top: 5vh;
+     padding-bottom: 5vh;
+   }
+h2 { font-size: 7vh;
+     font-weight: 300;
+     margin: 0.5em;}
+h3 { font-size: 6vh;
+     font-weight: 300;
+     margin: 0.5em;}
+code, table {
+    text-align: left;
+    margin: 0.5em auto;
+}
+code {
+    display: inline-block;
+}
+#copyright {
+    position: fixed;
+    bottom: 1vh;
+    left: 1vh;
+}
+blockquote {
+    font-style: italic;
+    text-align: left;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+#outer {
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+.slide {
+    page-break-after:always;
+    width: 100vw;
+    height: 100vh;
+}
+
+.stripe{
+    width: 100vw;
+    height: 2vh;
+    background-color: #0086c3;
+}
+
+@media print {  
+  @page {
+    size: 297mm 210mm;
+   }
+}
+
+.title {
+    margin-top: 20vh;
+    font-weight: 350;
+}
+
+.subtitle {
+    font-weight: 300;
+}
+
+.author {
+    font-weight: 300;
+}
+
+.date {
+    font-weight: 300;
+}
+
+/* div.slide::before {
+    background-image: url(/static/img/header.png);
+display: inline-block;
+width: 90vw;
+height: 15vh;
+content: "";
+background-size: 70vw;
+background-repeat: no-repeat;
+background-position: center;
+} */
+
+div.slide > p {
+    margin: 5px;
+}
+
+iframe {
+    /* for jupyter-embedding */
+    width: 90vw;
+    border: 0;
+    height: 60vh;
+}
+
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#header > img {
+    max-width: 90vw;
+    width: 90vw;
+}
+
+img {
+    max-height: 70vh;
+    max-width: 70vw;
+}
+
+th, td {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+table {
+    display: inline-block;
+    border-collapse: collapse;
+}
+
+tr.header {
+    border-bottom: .1em solid;
+}
+
+div.slidenum {
+    font-size: 1em;
+    position: fixed;
+    bottom: .2em;
+    right: .5em;
+}
+
+ul, ol {
+    text-align: left;
+}
+
+div > ul, ol {
+    display: table;
+    margin: .5em auto;
+}
+
+p.caption {
+    font-size: .5em;
+    margin-top: 0;
+}
